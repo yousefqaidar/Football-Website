@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GoalAstic Daily News</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/football2.png">
+</head>
+<body>
+  <header>
+    <button id="menuBtn" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="brand">
+      <span class="goal">GOAL</span>
+      <span class="astic">ASTIC</span>
+      <span class="daily">DAILY NEWS</span>
+    </div>
+  </header>
+  <nav class="side-nav" id="sideNav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Matches</a></li>
+      <li><a href="#">World Cup</a></li>
+      <li><a href="#">Cricket</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="matches">
+      <h2>Today's Matches</h2>
+      <div class="match-cards">
+        <div class="match-card live">
+          <div class="teams">
+            <img src="https://img.icons8.com/color/48/fc-barcelona.png" alt="FC Barcelona">
+            <span class="score">
+              <span>2</span>
+              <span class="dash">-</span>
+              <span>1</span>
+            </span>
+            <img src="https://img.icons8.com/color/48/manchester-city.png" alt="Man City">
+          </div>
+          <div class="match-info">
+            <span class="team-names">FC Barcelona <b>vs</b> Manchester City</span>
+            <span class="time">8:30 <span class="live-dot"></span> LIVE</span>
+          </div>
+        </div>
+        <div class="match-card upcoming">
+          <div class="teams">
+            <img src="https://img.icons8.com/color/48/brighton--v1.png" alt="Brighton">
+            <span class="score">
+              <span>-</span>
+              <span class="dash">-</span>
+              <span>-</span>
+            </span>
+            <img src="https://img.icons8.com/color/48/tottenham-hotspur.png" alt="Tottenham">
+          </div>
+          <div class="match-info">
+            <span class="team-names">Brighton <b>vs</b> Tottenham</span>
+            <span class="time">10:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-section news-section">
+      <div class="section-header">
+        <h2>Fifa World Cup</h2>
+        <a href="#">View all &rarr;</a>
+      </div>
+      <div class="news-grid">
+        <div class="news-card">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80" alt="Fifa celebration">
+          <div class="news-content">
+            <span class="news-meta">Qatar World Cup 2022</span>
+            <span class="news-title">Messi goals against Switzerland</span>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="https://images.unsplash.com/photo-1505843273132-bb4e6c8e0c77?auto=format&fit=crop&w=400&q=80" alt="Fifa action">
+          <div class="news-content">
+            <span class="news-meta">Qatar World Cup 2022</span>
+            <span class="news-title">Messi goals against Switzerland</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-section cricket-section">
+      <h2>Cricket World Cup</h2>
+      <div class="cricket-img-wrap">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="England Cricket">
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
