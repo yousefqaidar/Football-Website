@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Goalastic Daily</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="topbar">
+  <div class="brand">
+    
+    <img src="Images/News,Contact,Support/Logo.png" alt="Goalastic" class="logo-img">
+
+  </div>
+
+  <nav class="nav">
+    <div class="nav-pages">
+      <a href="index.html" class="nav-link">Home 🏠︎</a>
+      <a href="Leagues.html" class="nav-link active">Leagues ᯓ⚽︎</a>
+      <a href="newspage.html" class="nav-link">NewsPage 🗞️</a>
+      <a href="contact.html" class="nav-link">Contact 📥</a>
+      <a href="support.html" class="nav-link">Support 🔧</a>
+    </div>
+  </nav>
+</header>
+
+    <main class="container">
+        <section id="scores" class="section">
+            <h2>League Table</h2>
+            <div class="scores-table-wrapper">
+                <table id="leagueTable" class="scores-table" aria-describedby="leagueTable">
+                    <thead>
+                        <tr>
+                            <th data-col="pos">Pos</th>
+                            <th data-col="team">Team</th>
+                            <th data-col="pl">P</th>
+                            <th data-col="gd">GD</th>
+                            <th data-col="pts">Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr data-team="Arsenal" data-logo="Images/Leagues/arsenal.png" data-pl="11" data-gd="15" data-pts="26"></tr>
+                        <tr data-team="Manchester City" data-logo="Images/Leagues/Manchester-City.png" data-pl="11" data-gd="15" data-pts="22"></tr>
+                        <tr data-team="Chelsea" data-logo="Images/Leagues/Chelsea.png" data-pl="11" data-gd="10" data-pts="20"></tr>
+                        <tr data-team="Liverpool" data-logo="Images/Leagues/liverpool.png" data-pl="11" data-gd="4" data-pts="19"></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

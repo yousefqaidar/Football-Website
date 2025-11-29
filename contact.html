@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - GOALISTIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+
+    <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="brand">
+      <img src="Images/News,Contact,Support/Logo.png" class="logo-img">
+    </div>
+
+    <div class="nav">
+      <div class="nav-pages">        
+        <a href="index.html" class="nav-link">Home 🏠︎</a>
+        <a href="Leagues.html" class="nav-link">Leagues ᯓ⚽︎</a>
+        <a href="newspage.html" class="nav-link">NewsPage 🗞️</a>
+        <a href="contact.html" class="nav-link active">Contact 📥</a>
+        <a href="support.html" class="nav-link">Support 🔩</a>
+      </div>
+
+      <div class="nav-divider"></div>
+
+      <div class="nav-sections">
+        <a href="newspage.html#headline" class="nav-link">Headlines 📰</a>
+        <a href="newspage.html#qualifiers" class="nav-link">Qualifiers ✅</a>
+        <a href="newspage.html#players" class="nav-link">Players 👥</a>
+        <a href="newspage.html#fixtures" class="nav-link">Fixtures ⚙️</a>
+        <a href="newspage.html#gallery" class="nav-link">Gallery 🖼️</a>
+        <a href="newspage.html#more-news" class="nav-link">More news 🔴📰</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <div class="theme-row">
+    <button class="theme-toggle" id="themeToggle">☾</button>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="Images/News,Contact,Support/Stadium.jpeg" alt="Stadium">
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Contact Us</h1>
+      <p class="hero-sub">We’re here to help you with anything related to GOALISTIC.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <h2>Get in touch</h2>
+    <div class="grid">
+
+      <div class="card" style="grid-column:span 6;">
+        <div class="card-body">
+          <h3>Email</h3>
+          <p>Reach us anytime and our team will respond within 24 hours.</p>
+          <div class="meta"><span>📩 contact@goalistic.com</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="grid-column:span 6;">
+        <div class="card-body">
+          <h3>Business Enquiries</h3>
+          <p>For partnerships, media and collaboration opportunities.</p>
+          <div class="meta"><span>💼 business@goalistic.com</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="grid-column:span 12;">
+        <div class="card-body">
+          <h3>Send us a message</h3>
+
+          <form style="display:grid; gap:14px; margin-top:10px;">
+            <input type="text" placeholder="Your Name" style="padding:12px; border:1px solid var(--border); background:var(--card); color:var(--text); border-radius:8px;">
+            <input type="email" placeholder="Your Email" style="padding:12px; border:1px solid var(--border); background:var(--card); color:var(--text); border-radius:8px;">
+            <textarea placeholder="Your Message" rows="5" style="padding:12px; border:1px solid var(--border); background:var(--card); color:var(--text); border-radius:8px;"></textarea>
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>© 2025 GOALISTIC — WEB-DEVS</footer>
+
+  <script>
+    const body = document.body;
+    const themeToggle = document.getElementById('themeToggle');
+
+    function setTheme(mode) {
+      body.classList.remove('light','dark');
+      body.classList.add(mode);
+      themeToggle.textContent = mode === 'dark' ? '☾' : '☀';
+      localStorage.setItem('goalistic-theme', mode);
+    }
+
+    const saved = localStorage.getItem('goalistic-theme');
+    setTheme(saved ? saved : 'dark');
+
+    themeToggle.addEventListener('click', () => {
+      const current = body.classList.contains('dark') ? 'dark' : 'light';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+
+</body>
+</html>

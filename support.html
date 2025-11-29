@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support – GOALISTIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet"> <!--Font-->
+</head>
+<body class="dark">
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="brand">
+      <img src="Images/News,Contact,Support/Logo.png" class="logo-img">
+    </div>
+
+    <div class="nav">
+      <div class="nav-pages">
+        <a href="index.html" class="nav-link">Home 🏠︎</a>
+        <a href="Leagues.html" class="nav-link">Leagues ᯓ⚽︎</a>
+        <a href="newspage.html" class="nav-link">NewsPage 🗞️</a>
+        <a href="contact.html" class="nav-link">Contact 📥</a>
+        <a href="support.html" class="nav-link active">Support 🔩</a>
+      </div>
+
+      <div class="nav-divider"></div>
+
+      <div class="nav-sections">
+        <a href="newspage.html#headline" class="nav-link">Headlines 📰</a>
+        <a href="newspage.html#qualifiers" class="nav-link">Qualifiers ✅</a>
+        <a href="newspage.html#players" class="nav-link">Players 👥</a>
+        <a href="newspage.html#fixtures" class="nav-link">Fixtures ⚙️</a>
+        <a href="newspage.html#gallery" class="nav-link">Gallery 🖼️</a>
+        <a href="newspage.html#more-news" class="nav-link">More news 🔴📰</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- THEME BUTTON -->
+  <div class="theme-row">
+    <button class="theme-toggle" id="themeToggle">☾</button>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="Images/News,Contact,Support/Stadium.jpeg" alt="">
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Support Center</h1>
+      <p class="hero-sub">Match-ready assistance for all your GOALISTIC needs ⚽</p>
+    </div>
+  </header>
+
+  <!-- SUPPORT CARDS -->
+  <section class="section">
+    <h2>How can we help you?</h2>
+
+    <div class="grid">
+
+      <!-- ACCOUNT -->
+      <div class="card" style="grid-column:span 4;">
+        <img src="Images/News,Contact,Support/Football.Pitch.jpeg" alt="Football fan login">
+        <div class="card-body">
+          <h3>Account & Login Issues</h3>
+          <p>Having trouble logging in, signing up, or accessing your fan profile?</p>
+          <button class="btn" onclick="openSupport('account')">Learn more</button>
+        </div>
+      </div>
+
+      <!-- TECHNICAL -->
+      <div class="card" style="grid-column:span 4;">
+        <img src="Images/News,Contact,Support/Stadium-Technology.jpg" alt="Stadium technology">
+        <div class="card-body">
+          <h3>Technical Problems</h3>
+          <p>Website loading issues, broken live scores, app problems, or match data errors.</p>
+          <button class="btn" onclick="openSupport('technical')">Learn more</button>
+        </div>
+      </div>
+
+      <!-- MATCH DATA / STATS -->
+      <div class="card" style="grid-column:span 4;">
+        <img src="Images/News,Contact,Support/Football-Tactics.jpg" alt="Football tactics">
+        <div class="card-body">
+          <h3>Match Data & Stats</h3>
+          <p>Wrong live scores? Missing player info? Incorrect stats or match events?</p>
+          <button class="btn" onclick="openSupport('matchdata')">Learn more</button>
+        </div>
+      </div>
+
+      <!-- REPORT ISSUE -->
+      <div class="card" style="grid-column:span 4;">
+        <img src="Images/News,Contact,Support/VAR-Check.jpg" alt="VAR Check">
+        <div class="card-body">
+          <h3>Report Incorrect Information</h3>
+          <p>Found a mistake in a match article, a statistic, or a player bio?</p>
+          <button class="btn" onclick="openSupport('report')">Report an issue</button>
+        </div>
+      </div>
+
+      <!-- FEEDBACK -->
+      <div class="card" style="grid-column:span 4;">
+        <img src="Images/News,Contact,Support/Feedback.jpg" alt="Feedback">
+        <div class="card-body">
+          <h3>Feedback & Suggestions</h3>
+          <p>Help us improve GOALISTIC. We’re always adding new features.</p>
+          <button class="btn" onclick="openSupport('feedback')">Send feedback</button>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="card" style="grid-column:span 4;">
+        <img src="Images/News,Contact,Support/Support.jpg" alt="Support Team">
+        <div class="card-body">
+          <h3>Still need help?</h3>
+          <p>Our support team is here to assist you — just like a coach on the sideline.</p>
+          <button class="btn primary" onclick="window.location='contact.html'">Contact Support</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>© 2025 GOALISTIC — WEB-DEVS</footer>
+
+  <script>
+    function openSupport(type) {
+      alert("This support section is coming soon: " + type);
+    }
+
+    const body = document.body;
+    const themeToggle = document.getElementById('themeToggle');
+
+    function setTheme(mode) {
+      body.classList.remove('light','dark');
+      body.classList.add(mode);
+      themeToggle.textContent = mode === 'dark' ? '☾' : '☀';
+      localStorage.setItem('goalistic-theme', mode);
+    }
+
+    const saved = localStorage.getItem('goalistic-theme');
+    setTheme(saved ? saved : 'dark');
+
+    themeToggle.addEventListener('click', () => {
+      const current = body.classList.contains('dark') ? 'dark' : 'light';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+
+</body>
+</html>

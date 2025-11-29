@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Goalastic</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/football2.png">
+</head>
+<body>
+ <header class="topbar">
+  <div class="brand">
+    
+    <img src="Images/News,Contact,Support/Logo.png" alt="Goalastic" class="logo-img">
+
+  </div>
+
+  <nav class="nav">
+    <div class="nav-pages">
+      <a href="index.html" class="nav-link active">Home 🏠︎</a>
+      <a href="leagues.html" class="nav-link">Leagues ᯓ⚽︎</a>
+      <a href="newspage.html" class="nav-link">NewsPage 🗞️</a>
+      <a href="contact.html" class="nav-link">Contact 📥</a>
+      <a href="support.html" class="nav-link">Support 🔧</a>
+    </div>
+  </nav>
+</header>
+
+
+  <section class="hero">
+  <img src="Images/News,Contact,Support/Sofi-Stadium.jpg" alt="Football Stadium">
+  <div class="hero-gradient"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">Welcome to Goalastic</h1>
+    <p class="hero-sub">
+      Your destination for the latest football news, scores, and team information.
+    </p>
+    <div class="hero-actions">
+      <a href="#news" class="btn primary">See Latest News</a>
+      <a href="#scores" class="btn">View Scores</a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="todays-matches" class="container section">
+    <h2 style="margin-bottom:16px; color:#000000; background:none; -webkit-text-fill-color:unset;">
+      Today's Matches
+    </h2>
+    <div class="matches-slider-horizontal">
+      <div class="matches-track">
+        <!-- LIVE match card -->
+        <div class="match-card live">
+          <span class="badge live-badge">Live</span>
+          <div class="match-details">
+            <img class="team-logo" src="Images/Images (Home Page)/Images (Small)/FC Barcelona (Small).png" alt="FC Barcelona" />
+            <div class="score-time">
+              <span class="match-time">8:30</span>
+              <div class="match-score">
+                <span class="score">2</span>
+                <span class="score-divider">-</span>
+                <span class="score">1</span>
+              </div>
+            </div>
+            <img class="team-logo" src="Images/Images (Home Page)/Images (Small)/Manchester City (Small).png" alt="Man City" />
+          </div>
+          <div class="clubs-row"></div>
+        </div>
+        <!-- ENDED match card -->
+        <div class="match-card ended">
+          <span class="badge ended-badge">Ended</span>
+          <div class="match-details">
+            <img class="team-logo" src="Images/Images (Home Page)/Images (Small)/Juventus (Small).png" alt="Juventus" />
+            <div class="score-time">
+              <span class="match-time">10:00</span>
+              <div class="match-score">
+                <span class="score">-</span>
+                <span class="score-divider">-</span>
+                <span class="score">-</span>
+              </div>
+            </div>
+            <img class="team-logo" src="Images/Images (Home Page)/Images (Small)/FC Bayern München (Small).png" alt="Bayern Munich" />
+          </div>
+          <div class="clubs-row"></div>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="news" class="container section">
+      <h2>Latest News</h2>
+      <div class="news-list">
+        <article class="news-card">
+          <img src="Images/News,Contact,Support/Cycling.jpg" alt="Cycling News">
+          <h3>Champions League Final: Epic Showdown!</h3>
+          <p>Two giants of European football clashed in a thrilling final, with drama until the last minute. Read our in-depth analysis and post-match interviews.</p>
+          <button class="read-more">Read More</button>
+        </article>
+        <article class="news-card">
+          <img src="Images/Images (Home Page)/Windows Transfer.jpg" alt="Transfer News">
+          <h3>Transfer Window: Top 5 Moves</h3>
+          <p>This summer's transfer window saw some jaw-dropping moves. Check who’s joining your favorite club and what it means for the season ahead.</p>
+          <button class="read-more">Read More</button>
+        </article>
+        <article class="news-card">
+          <img src="Images/News,Contact,Support/Rising-Star-Player.jpg" alt="Player News">
+          <h3>Rising Star: Player of the Month</h3>
+          <p>Meet the young sensation taking the league by storm. We break down his stats, style, and what makes him a future legend.</p>
+          <button class="read-more">Read More</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="scores" class="container section">
+      <h2>Recent Scores</h2>
+      <div class="scores-table-wrapper">
+        <table class="scores-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th></th>
+              <th>Score</th>
+              <th></th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>18 Oct</td>
+              <td>
+                <img src="Images/Images (Home Page)/FC Barcelona.png" alt="FC Barcelona">
+                FC Barcelona
+              </td>
+              <td>3 : 2</td>
+              <td>
+                <img src="https://img.icons8.com/color/36/real-madrid.png" alt="Real Madrid">
+                Real Madrid
+              </td>
+              <td><span class="final">FT</span></td>
+            </tr>
+            <tr>
+              <td>17 Oct</td>
+              <td>
+                <img src="https://img.icons8.com/color/36/liverpool-fc.png" alt="Liverpool">
+                Liverpool
+              </td>
+              <td>1 : 1</td>
+              <td>
+                <img src="Images/Images (Home Page)/Manchester City.png" alt="Man City">
+                Man City
+              </td>
+              <td><span class="final">FT</span></td>
+            </tr>
+            <tr>
+              <td>17 Oct</td>
+              <td>
+                <img src="Images/Images (Home Page)/Juventus.png" alt="Juventus">
+                Juventus
+              </td>
+              <td>0 : 2</td>
+              <td>
+                <img src="Images/Images (Home Page)/Bayern Munich.png" alt="Bayern">
+                Bayern
+              </td>
+              <td><span class="final">FT</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-flex">
+      <p>&copy; 2025 Goalastic. All rights reserved.</p>
+      <div class="socials">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/twitterx--v2.png" alt="X"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/facebook-new.png" alt="Facebook"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/instagram-new.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

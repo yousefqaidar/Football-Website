@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GOALISTIC | World Cup 2026 News Portal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="topbar">
+
+  <div class="brand">
+    <img src="Images/News,Contact,Support/Logo.png" class="logo-img" alt="GOALISTIC Logo">
+  </div>
+
+  <div class="nav">
+
+    <div class="nav-pages">
+      <a href="index.html" class="nav-link">Home 🏠︎</a>
+      <a href="Leagues.html" class="nav-link">Leagues ᯓ⚽︎</a>
+      <a href="newspage.html" class="nav-link active">NewsPage 🗞️</a>
+      <a href="contact.html" class="nav-link">Contact 📥</a>
+      <a href="support.html" class="nav-link">Support 🔩</a>
+<a>|</a>
+      <a href="#headline" class="nav-link">Headlines 📰</a>
+      <a href="#qualifiers" class="nav-link">Qualifiers ✅</a>
+      <a href="#players" class="nav-link">Players 👥</a>
+      <a href="#fixtures" class="nav-link">Fixtures ⚙️</a>
+      <a href="#gallery" class="nav-link">Gallery 🖼️</a>
+      <a href="#more-news" class="nav-link">More news 🔴📰</a>
+      <div> </div>
+        <button class="theme-toggle" id="theme-toggle" aria-pressed="false">🌙</button>
+    </div>
+
+  </div>
+
+</div>
+
+
+  <!-- Live ticker -->
+  <div class="ticker" aria-label="Live scores">
+    <div class="ticker-inner">
+      <span class="tag">LIVE</span> Portugal 3–1 Armenia | <span class="tag">FT</span> Argentina 2–0 Chile | <span class="tag">BREAKING</span> Haiti qualifies | <span class="tag">LIVE</span> England vs Germany 20:00 | <span class="tag">FT</span> Curaçao 0–0 Jamaica (QUALIFIED)
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero" id="headline">
+    <img src="Images/News,Contact,Support/Estadio-Azteca.jpg" alt="Estadio Azteca under lights"/>
+    <div class="hero-gradient" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">GOALISTIC - World Cup 2026 </h1>
+      <p class="hero-sub">From historic qualifications to powerhouse performances, GOALISTIC covers every heartbeat of the world’s biggest stage.</p>
+      <div class="hero-actions">
+        <button class="btn primary" onclick="document.getElementById('main-story').scrollIntoView({behavior:'smooth'})">Read top story</button>
+        <button class="btn" onclick="document.getElementById('fixtures').scrollIntoView({behavior:'smooth'})">See full fixtures</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Top story -->
+  <section class="section" id="main-story">
+    <h2>Top story</h2>
+    <div class="story">
+      <div class="lead">
+        <img src="Images/News,Contact,Support/Celebrating.jpg" alt="Portugal celebrating"/>
+        <div class="pad">
+          <h3>Portugal crushes Armenia — statement win on the road to 2026</h3>
+          <p>Bruno Fernandes orchestrates a ruthless display as Portugal book their place with flair and firepower.</p>
+          <div class="meta"><span>Report</span><span>Group stage</span><span>GOALISTIC</span></div>
+          <button class="btn toggle-info" data-info="Portugal controlled tempo and territory, pressing high and breaking lines. Armenia battled bravely but couldn’t resist the waves of attacks.">Match details</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="Portugal's statement win" data-image="Images/News,Contact,Support/Celebrating.jpg" data-content="Poise plus precision: Portugal’s forward line found angles at will, with Fernandes dictating, Neves linking, and the full-backs pinning Armenia deep. The tactical plan blended control and risk, delivering a scoreline that mirrored dominance.">See full story</button>
+        </div>
+      </div>
+      <div class="lead">
+        <img src="Images/News,Contact,Support/Sofi-Stadium.jpg" alt="SoFi Stadium"/>
+        <div class="pad">
+          <h3>Host cities ready: stadiums primed for global spectacle</h3>
+          <p>USA, Canada, and Mexico unveil final preparations — design, capacity, and atmosphere aligned for an unforgettable tournament.</p>
+          <div class="meta"><span>Feature</span><span>Venues</span><span>GOALISTIC</span></div>
+          <button class="btn see-more" data-title="Host cities and stadiums" data-image="Images/News,Contact,Support/Sofi-Stadium.jpg" data-content="From the iconic Estadio Azteca to modern marvels like SoFi and MetLife, the stage is set. Transport links, fan zones, and accessibility plans aim to deliver seamless matchday experiences across North America.">See full feature</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent qualifiers -->
+  <section class="section" id="qualifiers">
+    <h2>Recent qualifiers</h2>
+    <div class="grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="Images/News,Contact,Support/Iraq.jpg" alt="Fans celebrating"/>
+        <div class="card-body">
+          <h3>Iraq stuns UAE 2–1</h3>
+          <p>Mohanad Ali equalises; Al‑Ammari’s late penalty sends Iraq through in dramatic fashion.</p>
+          <div class="meta"><span class="chip">Asia</span><span>Qualifiers</span></div>
+          <button class="btn toggle-info" data-info="Iraq maintained belief under pressure, turned momentum with a high press, and converted at clutch time.">Details</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="Iraq's night of glory" data-image="Images/News,Contact,Support/Iraq.jpg" data-content="Under the lights, Iraq’s resilience became identity. Tactical bravery, precise substitutions, and unshakeable belief carried them to the brink — then over the line.">See full story</button>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="Images/News,Contact,Support/Messi.jpg" alt="Lionel Messi"/>
+        <div class="card-body">
+          <h3>Argentina seals qualification</h3>
+          <p>Composure and class as Argentina completes the job with a clean sheet and two moments of genius.</p>
+          <div class="meta"><span class="chip">CONMEBOL</span><span>Qualifiers</span></div>
+          <button class="btn toggle-info" data-info="Argentina’s compact shape smothered transition threats; controlled zones and killed space.">Details</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="Argentina's clinical path" data-image="Images/News,Contact,Support/Messi.jpg" data-content="Balance and bravery: the champions blend patience with punch. With depth across lines, they look built for late-tournament edges.">See full story</button>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="Images/News,Contact,Support/Mbappe.jpg" alt="Kylian Mbappé"/>
+        <div class="card-body">
+          <h3>France flies — Mbappé leads charge</h3>
+          <p>France’s speed and structure overwhelm the opposition; qualification secured with style.</p>
+          <div class="meta"><span class="chip">UEFA</span><span>Qualifiers</span></div>
+          <button class="btn toggle-info" data-info="Verticality plus variety: France’s rotations opened lanes; Mbappé exploited every inch.">Details</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="France in full flight" data-image="Images/News,Contact,Support/Mbappe.jpg" data-content="They don’t just attack — they stretch, bend, and snap defenses. A system tuned for moments and margins.">See full story</button>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="Images/News,Contact,Support/World-Cup.jpg" alt="World Cup Trophy"/>
+        <div class="card-body">
+          <h3>Concacaf surprises</h3>
+          <p>Curaçao, Haiti, and Panama clinch historic berths — a region reshaped by belief.</p>
+          <div class="meta"><span class="chip">CONCACAF</span><span>Qualifiers</span></div>
+          <button class="btn toggle-info" data-info="Margins matter: set pieces, timing, and emotional resilience defined the run-ins.">Details</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="Concacaf’s historic night" data-image="Images/News,Contact,Support/World-Cup.jpg" data-content="A derby of dreams across islands and isthmuses. Programs built on community and courage find the world’s stage.">See full story</button>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="Images/News,Contact,Support/Scotland-Returns.jpg" alt="Scotland celebrates"/>
+        <div class="card-body">
+          <h3>Scotland returns — tears and thunder</h3>
+          <p>Emotion floods the stands as the Tartan Army roars Scotland back onto the world stage.</p>
+          <div class="meta"><span class="chip">UEFA</span><span>Qualifiers</span></div>
+          <button class="btn toggle-info" data-info="Robust, relentless, resurgent — Scotland pressed with purpose and protected their box.">Details</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="Scotland’s long road home" data-image="Images/News,Contact,Support/Scotland-Returns.jpg" data-content="A tapestry of graft and grace: pragmatism at the back, bravery at the front, and belief in between.">See full story</button>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="Images/News,Contact,Support/Spain.jpeg" alt="Spain celebrates"/>
+        <div class="card-body">
+          <h3>Spain secures with control</h3>
+          <p>Possession plus precision: Spain tops the group after a late equaliser staves off upset fears.</p>
+          <div class="meta"><span class="chip">UEFA</span><span>Qualifiers</span></div>
+          <button class="btn toggle-info" data-info="Triangles and tempo: Spain pressed restarts, recycled pressure, and found the extra pass.">Details</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="Spain’s composure" data-image="Images/News,Contact,Support/Spain.jpeg" data-content="Patience as a weapon. Patterns that wear you down; quality that cuts you open.">See full story</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Star players -->
+  <section class="section" id="players">
+    <h2>Star players</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="Images/News,Contact,Support/Bruno-Fernandes.jpg" alt="Bruno Fernandes"/>
+        <div class="card-body">
+          <h3>Bruno Fernandes</h3>
+          <p>Vision and venom — Portugal’s metronome with a killer final ball.</p>
+          <div class="meta"><span class="chip">Portugal</span><span>Midfield</span></div>
+          <button class="btn toggle-info" data-info="Two goals, one assist, nine chances created — captain’s output with leader’s energy.">Highlights</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="Bruno’s blueprint" data-image="Images/News,Contact,Support/Bruno-Fernandes.jpg" data-content="Angles, awareness, authority — Bruno reads maps in motion and draws routes on the run.">See full profile</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/News,Contact,Support/Mbappe.jpg" alt="Kylian Mbappé"/>
+        <div class="card-body">
+          <h3>Kylian Mbappé</h3>
+          <p>Acceleration you feel; decisions you fear. France’s breaker-in-chief.</p>
+          <div class="meta"><span class="chip">France</span><span>Forward</span></div>
+          <button class="btn toggle-info" data-info="Hat-trick pace, double-marking shattered — Mbappé made distance disappear.">Highlights</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="Kylian at full tilt" data-image="Images/News,Contact,Support/Mbappe.jpg" data-content="A calculus of chaos: threat vectors from every angle, and a finish line he moves closer with every step.">See full profile</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/News,Contact,Support/Messi.jpg" alt="Lionel Messi"/>
+        <div class="card-body">
+          <h3>Lionel Messi</h3>
+          <p>Soft feet, sharp knives — timing’s poet keeps writing.</p>
+          <div class="meta"><span class="chip">Argentina</span><span>Forward</span></div>
+          <button class="btn toggle-info" data-info="Two assists in the pocket; a game controlled at walking speed.">Highlights</button>
+          <div class="info hidden"></div>
+          <button class="btn see-more" data-title="Messi’s margins" data-image="Images/News,Contact,Support/Messi.jpg" data-content="Between lines and minds — Messi chooses silence until the pitch is screaming.">See full profile</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fixtures (sample extended) -->
+  <section class="section" id="fixtures">
+    <h2>Full fixtures (highlights)</h2>
+    <div class="fixtures">
+      <table>
+        <thead>
+          <tr><th>Match</th><th>Date</th><th>City</th><th>Venue</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Opening match</td><td>June 11, 2026</td><td>Mexico City</td><td>Estadio Azteca</td></tr>
+          <tr><td>USA vs Mexico</td><td>June 15, 2026</td><td>Dallas</td><td>AT&T Stadium</td></tr>
+          <tr><td>Brazil vs France</td><td>June 18, 2026</td><td>Los Angeles</td><td>SoFi Stadium</td></tr>
+          <tr><td>Argentina vs Portugal</td><td>June 20, 2026</td><td>Miami</td><td>Hard Rock Stadium</td></tr>
+          <tr><td>England vs Germany</td><td>June 22, 2026</td><td>East Rutherford</td><td>MetLife Stadium</td></tr>
+          <tr><td>Spain vs Italy</td><td>June 24, 2026</td><td>Boston</td><td>Gillette Stadium</td></tr>
+          <tr><td>Round of 32</td><td>June 28 – July 2</td><td>Across host cities</td><td>Various</td></tr>
+          <tr><td>Round of 16</td><td>July 4 – July 7</td><td>Across host cities</td><td>Various</td></tr>
+          <tr><td>Quarterfinals</td><td>July 9 – July 12</td><td>Across host cities</td><td>Various</td></tr>
+          <tr><td>Semifinal 1</td><td>July 14, 2026</td><td>Dallas</td><td>AT&T Stadium</td></tr>
+          <tr><td>Semifinal 2</td><td>July 15, 2026</td><td>Atlanta</td><td>Mercedes‑Benz Stadium</td></tr>
+          <tr><td>Final</td><td>July 19, 2026</td><td>East Rutherford</td><td>MetLife Stadium</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Photo gallery -->
+  <section class="section" id="gallery">
+    <h2>Photo gallery</h2>
+    <div class="gallery">
+      <img src="Images/News,Contact,Support/World-Cup.jpg" alt="FIFA World Cup Trophy"/>
+      <img src="Images/News,Contact,Support/America-Stadium.jpg" alt="MetLife Stadium"/>
+      <img src="Images/News,Contact,Support/Sofi-Stadium.jpg" alt="SoFi Stadium"/>
+      <img src="Images/News,Contact,Support/Fans.jpg" alt="Football fans"/>
+    </div>
+  </section>
+
+  <!-- More news with full-page overlays -->
+  <section class="section" id="more-news">
+    <h2>More news</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="Images/News,Contact,Support/Panama-Celebrates.jpg" alt="Panama celebrates"/>
+        <div class="card-body">
+          <h3>Panama’s second coming</h3>
+          <p>Measured defending meets ruthless counters — Panama returns with identity and edge.</p>
+          <div class="meta"><span class="chip">CONCACAF</span><span>Feature</span></div>
+          <button class="btn see-more" data-title="Panama’s second coming" data-image="Images/News,Contact,Support/Panama-Celebrates.jpg" data-content="A program built on clarity and continuity. Panama sharpened their tools in regional battles and now brings them to the global stage.">See more</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/News,Contact,Support/Estadio-Akron.jpg" alt="Estadio Akron"/>
+        <div class="card-body">
+          <h3>Mexico’s moment</h3>
+          <p>Guadalajara, Monterrey, and CDMX set to host fevered nights and fierce duels.</p>
+          <div class="meta"><span class="chip">Mexico</span><span>Venues</span></div>
+          <button class="btn see-more" data-title="Mexico’s moment" data-image="Images/News,Contact,Support/Estadio-Akron.jpg" data-content="From Akron’s curves to Azteca’s myths, Mexico’s stadiums stitch history and modern theatre into matchday magic.">See more</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/News,Contact,Support/Gillet-Stadium.jpeg" alt="Gillette Stadium"/>
+        <div class="card-body">
+          <h3>Underdogs to watch</h3>
+          <p>Small margins, big hearts — the dark horses with bright ideas.</p>
+          <div class="meta"><span class="chip">Analysis</span><span>GOALISTIC</span></div>
+          <button class="btn see-more" data-title="Underdogs to watch" data-image="Images/News,Contact,Support/Gillet-Stadium.jpeg" data-content="Pressing puzzles, set-piece sorcery, and belief that bends the bracket — keep your eyes on the brave.">See more</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/News,Contact,Support/Hard-Rock-Stadium.jpeg" alt="Hard Rock Stadium"/>
+        <div class="card-body">
+          <h3>Miami nights</h3>
+          <p>Heat, noise, and narratives — knockout drama loves the coast.</p>
+          <div class="meta"><span class="chip">USA</span><span>Venues</span></div>
+          <button class="btn see-more" data-title="Miami nights" data-image="Images/News,Contact,Support/Hard-Rock-Stadium.jpeg" data-content="When the stakes rise, the air thickens. Miami’s theatre is built for cliffhangers.">See more</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/News,Contact,Support/Mercedes-Benz-Stadium.jpg" alt="Mercedes-Benz Stadium"/>
+        <div class="card-body">
+          <h3>Quarterfinal calculus</h3>
+          <p>Paths, permutations, and pressure — who meets who when it matters most.</p>
+          <div class="meta"><span class="chip">Bracket</span><span>Analysis</span></div>
+          <button class="btn see-more" data-title="Quarterfinal calculus" data-image="Images/News,Contact,Support/Mercedes-Benz-Stadium.jpg" data-content="Edges are earned early. The draw whispers, but performance shouts.">See more</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/News,Contact,Support/World-Cup.jpg" alt="World Cup Trophy"/>
+        <div class="card-body">
+          <h3>Final thoughts</h3>
+          <p>Who dares, wins? Or who waits, wins? The question is the drama.</p>
+          <div class="meta"><span class="chip">Opinion</span><span>GOALISTIC</span></div>
+          <button class="btn see-more" data-title="Final thoughts" data-image="Images/News,Contact,Support/World-Cup.jpg" data-content="Every champion carries contradiction — audacity and patience, fire and ice. The ones who balance it, lift gold.">See more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fan reactions -->
+  <section class="section">
+    <h2>Fan reactions</h2>
+    <div class="reactions">
+      <div class="reaction">
+        <img src="Images/News,Contact,Support/Curaçao.png" alt="Curaçao"/>
+        <p>“Curaçao qualifying is the best thing I’ve seen in football.”</p>
+      </div>
+      <div class="reaction">
+        <img src="Images/News,Contact,Support/Crowd.jpg" alt="Crowd"/>
+        <p>“Portugal looks inevitable — the synergy is scary.”</p>
+      </div>
+      <div class="reaction">
+        <img src="Images/News,Contact,Support/Supporters.jpg" alt="Supporters"/>
+        <p>“Messi still moves time. Argentina is poetry and pressure.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="overlay-content">
+      <div class="overlay-header">
+        <div class="overlay-title" id="overlay-title">Title</div>
+        <button class="overlay-close" id="overlay-close">Close</button>
+      </div>
+      <div class="overlay-body">
+        <img id="overlay-image" src="" alt="Story image"/>
+        <p id="overlay-text">Full story content will appear here.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-flex">
+      <p>&copy; 2025 Goalastic. All rights reserved.</p>
+      <div class="socials">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/twitterx--v2.png" alt="X"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/facebook-new.png" alt="Facebook"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/instagram-new.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle info boxes
+    document.querySelectorAll('.toggle-info').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const info = btn.nextElementSibling;
+        const text = btn.getAttribute('data-info');
+        if (info.classList.contains('hidden')) {
+          info.textContent = text;
+          info.classList.remove('hidden');
+        } else {
+          info.classList.add('hidden');
+        }
+      });
+    });
+
+    // Lightbox for gallery
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        const overlay = document.getElementById('overlay');
+        document.getElementById('overlay-title').textContent = 'Gallery';
+        document.getElementById('overlay-image').src = img.src;
+        document.getElementById('overlay-text').textContent = 'Swipe your eyes. Stay a while.';
+        overlay.classList.add('active');
+        overlay.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    // See more overlay for cards
+    document.querySelectorAll('.see-more').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const title = btn.getAttribute('data-title');
+        const image = btn.getAttribute('data-image');
+        const content = btn.getAttribute('data-content');
+        const overlay = document.getElementById('overlay');
+        document.getElementById('overlay-title').textContent = title;
+        document.getElementById('overlay-image').src = image;
+        document.getElementById('overlay-text').textContent = content;
+        overlay.classList.add('active');
+        overlay.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    // Close overlay on button or backdrop click
+    document.getElementById('overlay-close').addEventListener('click', () => {
+      const overlay = document.getElementById('overlay');
+      overlay.classList.remove('active');
+      overlay.setAttribute('aria-hidden', 'true');
+    });
+    document.getElementById('overlay').addEventListener('click', (e) => {
+      if (e.target.id === 'overlay') {
+        e.currentTarget.classList.remove('active');
+        e.currentTarget.setAttribute('aria-hidden', 'true');
+      }
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Theme toggle logic with localStorage persistence
+    const themeBtn = document.getElementById('theme-toggle');
+    const userPref = localStorage.getItem('goalistic-theme');
+
+    function applyTheme(pref) {
+      if (pref === 'light') {
+        document.body.classList.add('light');
+        themeBtn.textContent = '☀️';
+        themeBtn.setAttribute('aria-pressed', 'true');
+      } else {
+        document.body.classList.remove('light');
+        themeBtn.textContent = '🌙';
+        themeBtn.setAttribute('aria-pressed', 'false');
+      }
+    }
+
+    // Apply saved preference on load (default: dark)
+    applyTheme(userPref || 'dark');
+
+    themeBtn.addEventListener('click', () => {
+      const isLight = document.body.classList.toggle('light');
+      if (isLight) {
+        themeBtn.textContent = '☀️';
+        themeBtn.setAttribute('aria-pressed', 'true');
+        localStorage.setItem('goalistic-theme', 'light');
+      } else {
+        themeBtn.textContent = '🌙';
+        themeBtn.setAttribute('aria-pressed', 'false');
+        localStorage.setItem('goalistic-theme', 'dark');
+      }
+    });
+  </script>
+</body>
+</html>
